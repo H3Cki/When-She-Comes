@@ -8,4 +8,4 @@ Android App which allows you to take control of your Windows PC over the WiFi us
 - Windows magnify
 
 ## Screenshots
-[](screenshots/Screenshot_2020-03-02-19-11-11-652_com.example.whenshecomes.jpg)
+![](screenshots/Screenshot_2020-03-02-19-11-11-652_com.example.whenshecomes.jpg)
