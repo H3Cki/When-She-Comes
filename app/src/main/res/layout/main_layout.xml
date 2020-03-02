@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:backgroundTint="@android:color/background_light">
+
+    <Button
+        android:id="@+id/zoomInButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="+"
+        app:layout_constraintStart_toEndOf="@+id/zoomOutButton"
+        app:layout_constraintTop_toBottomOf="@+id/zoomSwitch" />
+
+    <TextView
+        android:id="@+id/sensTv"
+        android:layout_width="301dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="16dp"
+        android:text="Sensitivity"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/sensBar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/sensBar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/rightClick"
+        android:layout_width="64dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="R"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/zoomSwitch"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:text="Zoom"
+        app:layout_constraintBottom_toBottomOf="@+id/holdLSwitch"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/holdLSwitch"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Hold L"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/volumeBar" />
+
+    <SeekBar
+        android:id="@+id/volumeBar"
+        android:layout_width="375dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:progressTint="@color/colorAccent"
+        android:thumbTint="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/volumeTv" />
+
+    <TextView
+        android:id="@+id/volumeTv"
+        android:layout_width="202dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
+        android:text="Volume"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/volumeBar"
+        app:layout_constraintStart_toStartOf="@+id/volumeBar"
+        app:layout_constraintTop_toBottomOf="@+id/sensBar" />
+
+    <SeekBar
+        android:id="@+id/sensBar"
+        android:layout_width="304dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="8dp"
+        android:progressTint="@color/colorPrimaryDark"
+        android:thumbTint="@color/colorPrimary"
+        app:layout_constraintEnd_toStartOf="@+id/rightClick"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/volumeBar"
+        app:layout_constraintTop_toBottomOf="@+id/sensTv" />
+
+    <Button
+        android:id="@+id/kbdButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="KEYBOARD"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="@+id/holdLSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/holdLSwitch" />
+
+    <Button
+        android:id="@+id/zoomOutButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="@+id/zoomSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/zoomSwitch" />
+
+    <TextView
+        android:id="@+id/statusTv"
+        android:layout_width="177dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/reconnectButton"
+        app:layout_constraintEnd_toStartOf="@+id/holdLSwitch"
+        app:layout_constraintStart_toEndOf="@+id/zoomSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/volumeBar" />
+
+    <Button
+        android:id="@+id/reconnectButton"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/colorAlert"
+        android:text="RECONNECT"
+        android:textColor="@android:color/background_light"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/kbdButton"
+        app:layout_constraintEnd_toStartOf="@+id/kbdButton"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toEndOf="@+id/zoomSwitch" />
+
+    <TextView
+        android:id="@+id/inputTv"
+        android:layout_width="407dp"
+        android:layout_height="416dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/colorAccent"
+        android:backgroundTint="@android:color/background_light"
+        android:backgroundTintMode="src_over"
+        android:paddingLeft="20dp"
+        android:paddingTop="2dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="2dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/tertiary_text_light"
+        android:textSize="36sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reconnectButton" />
+
+</android.support.constraint.ConstraintLayout>
