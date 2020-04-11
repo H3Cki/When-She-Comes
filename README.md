@@ -1,6 +1,9 @@
 # When-She-Comes-App
 Android App which allows you to take control of your Windows PC over the WiFi using smartphone.
 
+# Requirement
+[This bad boy](https://github.com/H3Cki/When-She-Comes-Server)
+
 ## Features
 - Mouse input control
 - Keyboard input control (limited)
